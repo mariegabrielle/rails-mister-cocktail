@@ -1,2 +1,21 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1><%= @cocktail.name %></h1>
+        <h2>Ingredients</h2>
+        <% @cocktail.doses.each do |dose| %>
+          <p><%= dose.description %>: <%= dose.ingredient.name %></p>
+          <%= link_to cocktail_doses_path(@cocktail),
+          method: :delete,
+          data: { confirm: "Are you sure?" } do %>
+            <i class="fas fa-trash-alt"></i>
+          <% end %>
+        <% end %>
+
+        <h2>Add a dose</h2>
+
+      <%= render 'doses/form' %>
+
+    </div>
+  </div>
+</div>
