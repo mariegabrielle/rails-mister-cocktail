@@ -1,9 +1,12 @@
 <div class="navbar-wagon">
-
-  <%= link_to "Cocktail", cocktails_path, class: "navbar-link" %>
-
-  <div >
-  <%= link_to "Add cocktail", new_cocktail_path, class: "btn-medium" %>
+  <div class="col-xs-12">
+    <div class="flex" >
+      <%= link_to "Cocktail", cocktails_path, class: "navbar-link" %>
+<!--     </div>
+    <div > -->
+      <div class="pull-right">
+        <%= link_to "Add cocktail", new_cocktail_path, class: "btn-medium" %>
+      </div>
+    </div>
   </div>
 </div>
-

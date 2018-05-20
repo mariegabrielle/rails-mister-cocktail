@@ -64,3 +64,5 @@ gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
 
 gem 'figaro'
+gem 'cloudinary'
+gem 'carrierwave', '~> 1.2'

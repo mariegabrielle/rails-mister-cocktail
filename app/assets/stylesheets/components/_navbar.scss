@@ -10,6 +10,16 @@
   justify-content: space-between;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.padded-navbar {
+  padding-bottom: 20px;
+}
+
 /* Logo */
 .navbar-wagon-brand img {
   height: 50px;
